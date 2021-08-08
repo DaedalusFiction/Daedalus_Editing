@@ -7,13 +7,12 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    background-image: url(images/lamen-cropped.jpg);
+    background-size: cover;
 }
 
 .header-item {
     background-color: transparent;
-    padding: 80px;
-    width: 100px;
-    height: 50px;
     color: rgb(88, 224, 206);
     text-align: center;
     text-decoration: none;
@@ -22,12 +21,16 @@ body {
 }
 
 .header-home {
-    text-align: start;
+    align-content: flex-end;
+    margin-top: auto;
 }
 
 .header-logo {
     width: 25%;
+    margin-top: 2em;
+    margin-bottom: 4em;
 }
 .header-links {
-    text-align: end;
+    align-content: flex-end;
+    margin-top: auto;
 }
