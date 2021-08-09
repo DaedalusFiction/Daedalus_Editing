@@ -2,6 +2,10 @@ body {
     background-color: salmon;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .header {
     display: flex;
     flex-flow: row wrap;
@@ -33,4 +37,25 @@ body {
 .header-links {
     align-content: flex-end;
     margin-top: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 100px / auto auto auto;
+    background-color: fuchsia;
+}
+
+.grid-item {
+    font-size: large;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+}
+
+.grid-item-1 {
+    grid-area: 1 / 1 / 2 / 4;
+    background-image: url(images/lamen-cropped.jpg);
+    background-size: cover;
 }
