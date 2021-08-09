@@ -49,3 +49,13 @@ body {
     display: block;
     color: black;
 }
+
+.article > h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-grid {
+    display: flex;
+    position: absolute;
+}
