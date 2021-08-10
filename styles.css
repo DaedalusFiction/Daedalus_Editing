@@ -54,9 +54,7 @@ body {
     display: flex;
     justify-content: center;
 }
-.footer {
-    position: fixed;
-}
+
 .footer-grid {
     display: grid;
     grid-template: auto / auto auto auto;
