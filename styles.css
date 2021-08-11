@@ -10,8 +10,7 @@ body {
 .grid-container {
     display: grid;
     grid-template: auto / auto auto auto;
-    background-image: url(images/lamen-cropped.jpg);
-    background-size: cover;
+    background: url(images/lamen-cropped.jpg) no-repeat center center / cover;
 }
 
 .grid-item {
