@@ -7,6 +7,7 @@
 }
 
 :root {
+    --primary-color: rgb(156, 202, 96);
     --background-primary: rgb(190, 186, 127);
     --background-secondary: rgb(216, 199, 178);
 }
@@ -26,6 +27,7 @@ a {
 ul {
     list-style: none;
 }
+
 
 /* Utilities */
 
@@ -57,6 +59,21 @@ ul {
     gap: 10px;
 }
 
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
 /* Navbar */
 
 .navbar {
@@ -70,10 +87,6 @@ ul {
 .navbar h1 {
     padding: 0px 0px;
     font-size: 3.5rem;
-}
-
-.navbar p {
-    padding: 0 0 10px 50px;
 }
 
 .navbar ul {
@@ -93,7 +106,7 @@ ul {
 
 .showcase {
     padding: 100px 0;
-    background-image: url(images/typewriter.jpg);
+    /* background-image: url(images/typewriter.jpg); */
     background-size: cover;
 }
 
@@ -101,17 +114,22 @@ ul {
     font-size: 3rem;
     line-height: 5rem;
     width: 350px;
+    padding-left: 30px;
+    transform: translateY(35px);
 }
 
 .showcase .card {
-    transform: translateY(-50px);
+    transform: translateY(40px);
     display: flex;
     justify-content: center;
     width: 350px;
+    z-index: 1;
 }
 
 .showcase .grid {
-    justify-content: center;
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
 }
 
 .showcase-form {
@@ -137,4 +155,45 @@ ul {
     border-bottom: 1px solid black;
     width: 100%;
 
+}
+
+.showcase::before,
+.showcase::after {
+    content: "";
+    position: absolute;
+    height: 110px;
+    bottom: -80px;
+    right: 0;
+    left: 0;
+    background: white;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+/* Services */
+
+.services {
+    background: white;
+    padding-top: 50px;
+}
+
+.services .grid h1 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px black solid;
+}
+
+.services > h1 {
+    font-size: 32px;
+    color: black;
+    transform: translateY(-20px);
+}
+
+.services ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
