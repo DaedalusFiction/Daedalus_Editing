@@ -15,8 +15,8 @@
 body {
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
-    line-height: 1.6rem;
     background-color: var(--background-secondary);
+    padding: 0 100px;
 }
 
 a {
@@ -33,15 +33,18 @@ ul {
 
 .container {
     max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 40px;
 }
 
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .card {
@@ -50,13 +53,16 @@ ul {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     margin: 10px;
     padding: 15px;
-
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
+.banner {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    margin: 20px;
+    width: 100%;
 }
 
 .btn {
@@ -78,28 +84,33 @@ ul {
 
 .navbar {
     background-color: var(--background-primary);
+    height: 90px;
+    width: 100%;
+    padding: 0 20px;
 }
 
-.navbar .flex {
+.navbar .container {
     justify-content: space-between;
 }
 
 .navbar h1 {
-    padding: 0px 0px;
-    font-size: 3.5rem;
+    margin-top: 10px;
+}
+
+.navbar nav {
+    height: 100%;
 }
 
 .navbar ul {
-    display: flex;
     flex-direction: column;
-    padding: 15px;
-    margin: 0 15px;
-    justify-content: center;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 90px;
 }
 
-.navbar ul li {
-    display: flex;
-    justify-content: flex-end;
+.navbar ul li :hover {
+    border-bottom: 1px solid black;
 }
 
 /* Showcase */
@@ -174,14 +185,33 @@ ul {
     -ms-transform: skewY(-3deg);
 }
 
-/* Services */
+.services {
+    padding: 100px 20px 0 20px;
+    background: white;
+}
+
+.services .card {
+    width: 250px;
+}
+
+.services .card h1 {
+    border-bottom: 1px solid black;
+}
+
+.services .card p {
+    padding: 10px;
+}
+
+/* Services 
 
 .services {
     background: white;
     padding: 120px 40px;
-    font-size: 16px;
+}
+
+.services .grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 2fr;
+    font-size: 14px;
 }
 
 .services .grid h1 {
@@ -191,8 +221,20 @@ ul {
     border-bottom: 1px black solid;
 }
 
-.services > h1 {
-    font-size: 32px;
-    color: black;
-    transform: translateY(-20px);
+.services p {
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1.5rem;
 }
+
+.service-option h1 {
+    padding: 5px;
+}
+
+.services .flex {
+    font-size: 32px;
+    padding: 0 0 25px 0;
+    color: black;
+}
+
+*/

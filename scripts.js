@@ -1,4 +1,2 @@
-const name = document.getElementById('name');
-
-name.focus();
+const name = document.getElementById('name').focus();
   
