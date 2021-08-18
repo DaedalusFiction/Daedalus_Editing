@@ -105,7 +105,7 @@ ul {
 /* Showcase */
 
 .showcase {
-    padding: 100px 0;
+    padding: 50px 0;
     /* background-image: url(images/typewriter.jpg); */
     background-size: cover;
 }
@@ -113,13 +113,12 @@ ul {
 .showcase h1 {
     font-size: 3rem;
     line-height: 5rem;
-    width: 350px;
-    padding-left: 30px;
+    justify-self: center;
     transform: translateY(35px);
 }
 
 .showcase .card {
-    transform: translateY(40px);
+    transform: translateY(50px);
     display: flex;
     justify-content: center;
     width: 350px;
@@ -128,7 +127,7 @@ ul {
 
 .showcase .grid {
     overflow: visible;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 45% 55%;
     gap: 30px;
 }
 
@@ -154,7 +153,10 @@ ul {
     border: 0;
     border-bottom: 1px solid black;
     width: 100%;
+}
 
+.showcase-form input:focus {
+    outline: none;
 }
 
 .showcase::before,
@@ -162,7 +164,7 @@ ul {
     content: "";
     position: absolute;
     height: 110px;
-    bottom: -80px;
+    bottom: -5px;
     right: 0;
     left: 0;
     background: white;
@@ -176,10 +178,14 @@ ul {
 
 .services {
     background: white;
-    padding-top: 50px;
+    padding: 120px 40px;
+    font-size: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr;
 }
 
 .services .grid h1 {
+    grid-column: 1 / span 3;
     display: flex;
     justify-content: center;
     border-bottom: 1px black solid;
@@ -189,11 +195,4 @@ ul {
     font-size: 32px;
     color: black;
     transform: translateY(-20px);
-}
-
-.services ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
 }

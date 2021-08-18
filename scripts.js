@@ -1,4 +1,4 @@
-function testFunction() {
-    window.alert("good job");
-}
+const name = document.getElementById('name');
+
+name.focus();
   
