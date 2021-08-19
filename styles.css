@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Style+Script&family=Work+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -19,13 +21,17 @@
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
     background-color: var(--background-secondary);
 }
 
 a {
     text-decoration: none;
+    color: #333;
+}
+
+p, h1, h2 {
     color: #333;
 }
 
@@ -166,7 +172,7 @@ ul {
 }
 
 .showcase-form p {
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .showcase-form input[type='text'],
@@ -196,20 +202,32 @@ ul {
     -ms-transform: skewY(-3deg);
 }
 
+/* Services */
+
 .services {
-    padding: 100px 20px;
+    padding: 50px 0;
     background: white;
 }
 
-.services .card {
-    width: 250px;
+.services .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
-.services .card h1 {
-    border-bottom: 1px solid black;
+.service-options :first-child,
+.service-options :nth-child(5) {
+    grid-column: 1 / span 2;
 }
 
-.services .card p {
-    padding: 10px;
+.service-options :nth-child(4) {
+    grid-column: 2 / span 2;
 }
 
+.service-options img {
+    height: 100px;
+    width: 100px;
+}
+
+.service-options div {
+    flex-direction: column;
+}
