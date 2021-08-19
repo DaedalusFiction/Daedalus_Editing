@@ -12,11 +12,16 @@
     --background-secondary: rgb(216, 199, 178);
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
     background-color: var(--background-secondary);
-    padding: 0 100px;
 }
 
 a {
@@ -33,6 +38,9 @@ ul {
 
 .container {
     max-width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
 }
 
 .flex {
@@ -40,7 +48,9 @@ ul {
     justify-content: center;
     align-items: center;
 }
-
+.grid {
+    display: grid;
+}
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -119,13 +129,14 @@ ul {
     padding: 50px 0;
     /* background-image: url(images/typewriter.jpg); */
     background-size: cover;
+    grid-template-columns: 45% 55%;
 }
 
 .showcase h1 {
     font-size: 3rem;
     line-height: 5rem;
     justify-self: center;
-    transform: translateY(35px);
+    padding-top: 90px;
 }
 
 .showcase .card {
@@ -186,7 +197,7 @@ ul {
 }
 
 .services {
-    padding: 100px 20px 0 20px;
+    padding: 100px 20px;
     background: white;
 }
 
@@ -202,39 +213,3 @@ ul {
     padding: 10px;
 }
 
-/* Services 
-
-.services {
-    background: white;
-    padding: 120px 40px;
-}
-
-.services .grid {
-    grid-template-columns: repeat(3, 1fr);
-    font-size: 14px;
-}
-
-.services .grid h1 {
-    grid-column: 1 / span 3;
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px black solid;
-}
-
-.services p {
-    padding: 5px;
-    font-size: 16px;
-    line-height: 1.5rem;
-}
-
-.service-option h1 {
-    padding: 5px;
-}
-
-.services .flex {
-    font-size: 32px;
-    padding: 0 0 25px 0;
-    color: black;
-}
-
-*/
