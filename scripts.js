@@ -1,29 +1,61 @@
 const name = document.getElementById('name').focus();
-const numSteps = 20.0;
+const sr1List = document.querySelectorAll('.sr1-wrapper');
 
-let servicesElement;
-let prevRatio = 0.0;
+const observer = new IntersectionObserver(entries => {
 
-window.addEventListener("load", (event) => {
-    servicesElement = document.querySelector('#servicesSection');
+    entries.forEach(entry => { 
 
-    createObserver();
-} )
+        if (entry.isIntersecting && entry.target.classList.contains('sr1-wrapper')) {
+            entry.target.classList.add('slideFromLeft');
+            return;
+        } else if (entry.isIntersecting && entry.target.classList.contains('sr2-wrapper')) {
+            entry.target.classList.add('slideFromRight');
+            return;
+        } 
 
-function createObserver() {
-    let observer;
+
+        entry.target.classList.remove('slideFromLeft');
+        entry.target.classList.remove('slideFromRight');
+
+    })
+
+});
+
+
+sr1List.forEach(el => {
+    observer.observe(el);
+});
+observer.observe(document.querySelector('.sr2-wrapper'));
+
+
+
+
+
+// const numSteps = 20.0;
+
+// let servicesElement;
+// let prevRatio = 0.0;
+
+// window.addEventListener("load", (event) => {
+//     servicesElement = document.querySelector('#servicesSection');
+
+//     createObserver();
+// } )
+
+// function createObserver() {
+//     let observer;
     
 
-    let options = {
-        root: document.querySelector(null),
-        rootMargin: "0px",
-        threshold: [0.2, 0.3]
-        //threshold: buildThresholdList()
-    };
+//     let options = {
+//         root: document.querySelector(null),
+//         rootMargin: "0px",
+//         threshold: [0, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+//         //threshold: buildThresholdList()
+//     };
 
-    observer = new IntersectionObserver(handleIntersect, options);
-    observer.observe(servicesElement);
-}
+//     observer = new IntersectionObserver(handleIntersect, options);
+//     observer.observe(servicesElement);
+// }
 
 // function buildThresholdList() {
 //     let thresholds = [];
@@ -43,7 +75,6 @@ function handleIntersect(entries, observer) {
     entries.forEach((entry) => {
         if (entry.intersectionRatio > prevRatio) {
             console.log(entry.intersectionRatio);
-            entry.target.style.opacity = entry.intersectionRatio;
         } 
 
         prevRatio = entry.intersectionRatio;

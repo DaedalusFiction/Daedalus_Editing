@@ -226,11 +226,19 @@ ul {
 }
 
 .sr1, .sr3 {
-    animation: slideInFromLeft 1.5s ease-out;
+    overflow: hidden;
 }
 
 .sr2 {
-    animation: slideInFromRight 1.5s ease-out;
+    overflow: hidden;
+}
+
+.slideFromLeft {
+    animation: slideInFromLeft 0.7s ease-out;
+}
+
+.slideFromRight {
+    animation: slideInFromRight 0.7s ease-out;
 }
 
 .service-options img {
@@ -252,17 +260,24 @@ ul {
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
+        opacity: 0;
     } 
     100% {
         transform: translateX(0);
+        opacity: 100%;
     }
 }
 
 @keyframes slideInFromRight {
     0% {
         transform: translateX(100%);
+        opacity: 0;
     } 
     100% {
         transform: translateX(0);
+        opacity: 100%;
     }
 }
+
+/* Media Queries */
+
