@@ -225,14 +225,6 @@ ul {
     grid-column: 2 / span 2;
 }
 
-.sr1, .sr3 {
-    overflow: hidden;
-}
-
-.sr2 {
-    overflow: hidden;
-}
-
 .slideFromLeft {
     animation: slideInFromLeft 0.7s ease-out;
 }

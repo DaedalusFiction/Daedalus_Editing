@@ -1,5 +1,6 @@
 const name = document.getElementById('name').focus();
 const sr1List = document.querySelectorAll('.sr1-wrapper');
+const sr2List = document.querySelectorAll('.sr2-wrapper');
 
 const observer = new IntersectionObserver(entries => {
 
@@ -25,7 +26,10 @@ const observer = new IntersectionObserver(entries => {
 sr1List.forEach(el => {
     observer.observe(el);
 });
-observer.observe(document.querySelector('.sr2-wrapper'));
+sr2List.forEach(el => {
+    observer.observe(el);
+});
+
 
 
 
