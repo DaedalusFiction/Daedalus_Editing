@@ -9,10 +9,19 @@
 }
 
 :root {
+    --primary-color: rgb(206, 145, 31);
+    --background-primary: rgb(11, 63, 77);
+    --background-secondary: rgb(216, 199, 178);
+    --text-primary: rgba(255, 255, 255, 0.801);;
+    --text-secondary: #333;
+}
+/* :root {
     --primary-color: rgb(156, 202, 96);
     --background-primary: rgb(190, 186, 127);
     --background-secondary: rgb(216, 199, 178);
-}
+    --text-primary: black;
+    --text-secondary: black;
+} */
 
 * {
     box-sizing: border-box;
@@ -23,12 +32,15 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    background-color: var(--background-secondary);
+    background-image: url(images/spaceone.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 a {
     text-decoration: none;
-    color: #333;
+    color: var(--text-primary);
 }
 
 p, h1, h2 {
@@ -43,7 +55,7 @@ ul {
 /* Utilities */
 
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;
@@ -125,7 +137,15 @@ ul {
 }
 
 .navbar ul li :hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--text-secondary);
+}
+
+.welcome {
+    background: var(--background-secondary);
+}
+
+.photo {
+    height: 550px;
 }
 
 /* Showcase */
@@ -142,6 +162,7 @@ ul {
     line-height: 5rem;
     justify-self: center;
     padding-top: 90px;
+    color: white;
 }
 
 .showcase .card {
@@ -178,7 +199,7 @@ ul {
 .showcase-form input[type='email'] {
     font-size: 16px;
     border: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--text-secondary);
     width: 100%;
 }
 
@@ -186,7 +207,7 @@ ul {
     outline: none;
 }
 
-.showcase::before,
+/* .showcase::before,
 .showcase::after {
     content: "";
     position: absolute;
@@ -199,7 +220,7 @@ ul {
     -webkit-transform: skewY(-3deg);
     -moz-transform: skewY(-3deg);
     -ms-transform: skewY(-3deg);
-}
+} */
 
 /* Services */
 
@@ -226,11 +247,11 @@ ul {
 }
 
 .slideFromLeft {
-    animation: slideInFromLeft 0.7s ease-out;
+    animation: slideInFromLeft 0.4s ease-out;
 }
 
 .slideFromRight {
-    animation: slideInFromRight 0.7s ease-out;
+    animation: slideInFromRight 0.4s ease-out;
 }
 
 .service-options img {
