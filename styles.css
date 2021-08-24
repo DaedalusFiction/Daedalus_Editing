@@ -57,7 +57,6 @@ ul {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    overflow: auto;
     padding: 0 40px;
 }
 
@@ -90,6 +89,7 @@ ul {
     border-bottom: 1px solid black;
     padding: 5px;
     margin: 20px;
+    width: 100%;
 }
 
 .btn {
@@ -140,13 +140,35 @@ ul {
     border-bottom: 1px solid var(--text-secondary);
 }
 
+.photo {
+    height: 550px;
+}
+
+/* welcome */
+
 .welcome {
     background: var(--background-secondary);
 }
 
-.photo {
-    height: 550px;
+.welcome .flex {
+    flex-direction: column;
 }
+
+.welcome .grid {
+    grid-template-columns: 60% 40%;
+}
+
+.welcome p {
+    margin: 10px 40px;
+}
+
+
+
+.headshot img {
+    padding: 20px;
+    max-width: 300px;
+}
+
 
 /* Showcase */
 
