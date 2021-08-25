@@ -9,11 +9,11 @@
 }
 
 :root {
-    font-size: 16px;
+    font-size: 20px;
     --primary-color: rgb(206, 145, 31);
     --background-primary: rgb(11, 63, 77);
     --background-secondary: rgb(216, 199, 178);
-    --text-primary: rgba(255, 255, 255, 0.801);;
+    --text-primary: rgba(255, 255, 255, 0.801);
     --text-secondary: #333;
 }
 /* :root {
@@ -130,18 +130,35 @@ ul {
     background: var(--background-secondary);
 }
 
+.showcase .container {
+    padding: 50px;
+    border: 1px solid black;
+    max-width: 900px;
+}
+
+.showcase-left {
+    text-align: right;
+}
+
+.showcase-right {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .showcase h1 {
     color: var(--text-secondary);
 }
 
 .showcase .grid {
     overflow: hidden;
-    grid-template-columns: 45% 55%;
-    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
 }
 
 .showcase-form input[type='text'],
 .showcase-form input[type='email'] {
+    font-size: 1rem;
+    margin: 10px 0;
     border: 0;
     border-bottom: 1px solid var(--text-secondary);
     width: 100%;
@@ -195,11 +212,33 @@ ul {
     flex-direction: column;
 }
 
+/* Footer */
+.footer {
+    margin: 10px 0;
+}
+
+.footer img {
+    max-width: 70px;
+    height: auto;
+}
+
+.footer .flex {
+    justify-content: flex-start;
+}
+
+.footer nav {
+    margin-left: 20px;
+}
+.footer li {
+    color: var(--text-primary);
+}
+
+
 /* Animations */
 
 @keyframes slideInFromLeft {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-90%);
         opacity: 0;
     } 
     100% {
@@ -210,7 +249,7 @@ ul {
 
 @keyframes slideInFromRight {
     0% {
-        transform: translateX(100%);
+        transform: translateX(90%);
         opacity: 0;
     } 
     100% {
