@@ -9,6 +9,7 @@
 }
 
 :root {
+    font-size: 16px;
     --primary-color: rgb(206, 145, 31);
     --background-primary: rgb(11, 63, 77);
     --background-secondary: rgb(216, 199, 178);
@@ -51,69 +52,12 @@ ul {
     list-style: none;
 }
 
-
-/* Utilities */
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.grid {
-    display: grid;
-}
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    margin: 10px;
-    padding: 15px;
-}
-
-.banner {
-    display: flex;
-    justify-content: center;
-    font-size: 32px;
-    border-bottom: 1px solid black;
-    padding: 5px;
-    margin: 20px;
-    width: 100%;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
-}
-
-.btn:hover {
-    transform: scale(1.05);
-}
-
 /* Navbar */
 
 .navbar {
     background-color: var(--background-primary);
     height: 90px;
     width: 100%;
-    padding: 0 20px;
 }
 
 .navbar .container {
@@ -140,6 +84,8 @@ ul {
     border-bottom: 1px solid var(--text-secondary);
 }
 
+/* Photo */
+
 .photo {
     height: 550px;
 }
@@ -150,12 +96,19 @@ ul {
     background: var(--background-secondary);
 }
 
+.welcome .container {
+    max-width: 1000px;
+}
+
 .welcome .flex {
     flex-direction: column;
 }
 
 .welcome .grid {
     grid-template-columns: 60% 40%;
+    padding: 40px;
+    margin: 70px 0;
+    border: 1px solid black;
 }
 
 .welcome p {
@@ -174,52 +127,21 @@ ul {
 
 .showcase {
     padding: 50px 0;
-    /* background-image: url(images/typewriter.jpg); */
-    background-size: cover;
-    grid-template-columns: 45% 55%;
+    background: var(--background-secondary);
 }
 
 .showcase h1 {
-    font-size: 3rem;
-    line-height: 5rem;
-    justify-self: center;
-    padding-top: 90px;
-    color: white;
-}
-
-.showcase .card {
-    transform: translateY(50px);
-    display: flex;
-    justify-content: center;
-    width: 350px;
-    z-index: 1;
+    color: var(--text-secondary);
 }
 
 .showcase .grid {
-    overflow: visible;
+    overflow: hidden;
     grid-template-columns: 45% 55%;
     gap: 30px;
 }
 
-.showcase-form {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 300px;
-    width: 300px;
-}
-
-.showcase-form .form-control {
-    padding: 0;
-}
-
-.showcase-form p {
-    font-size: 24px;
-}
-
 .showcase-form input[type='text'],
 .showcase-form input[type='email'] {
-    font-size: 16px;
     border: 0;
     border-bottom: 1px solid var(--text-secondary);
     width: 100%;
@@ -229,22 +151,6 @@ ul {
     outline: none;
 }
 
-/* .showcase::before,
-.showcase::after {
-    content: "";
-    position: absolute;
-    height: 110px;
-    bottom: -5px;
-    right: 0;
-    left: 0;
-    background: white;
-    transform: skewY(-3deg);
-    -webkit-transform: skewY(-3deg);
-    -moz-transform: skewY(-3deg);
-    -ms-transform: skewY(-3deg);
-} */
-
-/* Services */
 
 .services {
     padding: 50px 0;
@@ -282,8 +188,7 @@ ul {
 }
 
 .service-options h4 {
-    margin: 5px 0;
-    font-size: 1.2em;
+    margin: 5px 0
 }
 
 .service-options div {
