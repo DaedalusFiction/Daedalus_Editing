@@ -11,10 +11,12 @@
 :root {
     font-size: 20px;
     --primary-color: rgb(206, 145, 31);
-    --background-primary: rgb(11, 63, 77);
-    --background-secondary: rgb(216, 199, 178);
+    --background-primary: #080808;
+    --background-secondary: #fdfdfd;
     --text-primary: rgba(255, 255, 255, 0.801);
-    --text-secondary: #333;
+    --text-secondary: #232323;
+    --btn-primary: #b2b41d;
+    --btn-secondary: #909300;
 }
 /* :root {
     --primary-color: rgb(156, 202, 96);
@@ -33,7 +35,7 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    background-image: url(images/spaceone.jpg);
+    background-image: url(images/spaceonecropped2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -56,8 +58,10 @@ ul {
 
 .navbar {
     background-color: var(--background-primary);
-    height: 90px;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .navbar .container {
@@ -81,7 +85,7 @@ ul {
 }
 
 .navbar ul li :hover {
-    border-bottom: 1px solid var(--text-secondary);
+    border-bottom: 2px solid var(--text-primary);
 }
 
 /* Photo */
@@ -108,8 +112,9 @@ ul {
     grid-template-columns: 60% 40%;
     padding: 40px;
     margin: 70px 0;
-    border: 1px solid black;
 }
+
+
 
 .welcome p {
     margin: 10px 40px;
@@ -132,7 +137,6 @@ ul {
 
 .showcase .container {
     padding: 50px;
-    border: 1px solid black;
     max-width: 900px;
 }
 
@@ -171,7 +175,7 @@ ul {
 
 .services {
     padding: 50px 0;
-    background: white;
+    background: var(--background-secondary);
 }
 
 .services .grid {
