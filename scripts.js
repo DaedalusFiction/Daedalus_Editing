@@ -24,32 +24,32 @@ function scrollFunction() {
 
 // Services Slider
 
-const observer = new IntersectionObserver(entries => {
+// const observer = new IntersectionObserver(entries => {
 
-    entries.forEach(entry => { 
+//     entries.forEach(entry => { 
 
-        if (entry.isIntersecting && entry.target.classList.contains('sr1-wrapper')) {
-            entry.target.classList.add('slideFromLeft');
-            return;
-        } else if (entry.isIntersecting && entry.target.classList.contains('sr2-wrapper')) {
-            entry.target.classList.add('slideFromRight');
-            return;
-        } 
+//         if (entry.isIntersecting && entry.target.classList.contains('sr1-wrapper')) {
+//             entry.target.classList.add('slideFromLeft');
+//             return;
+//         } else if (entry.isIntersecting && entry.target.classList.contains('sr2-wrapper')) {
+//             entry.target.classList.add('slideFromRight');
+//             return;
+//         } 
 
 
-        entry.target.classList.remove('slideFromLeft');
-        entry.target.classList.remove('slideFromRight');
+//         entry.target.classList.remove('slideFromLeft');
+//         entry.target.classList.remove('slideFromRight');
 
-    })
+//     })
 
-});
+// });
 
-sr1List.forEach(el => {
-    observer.observe(el);
-});
-sr2List.forEach(el => {
-    observer.observe(el);
-});
+// sr1List.forEach(el => {
+//     observer.observe(el);
+// });
+// sr2List.forEach(el => {
+//     observer.observe(el);
+// });
 
 
 
