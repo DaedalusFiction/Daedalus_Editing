@@ -11,11 +11,14 @@ function scrollFunction() {
     document.getElementById("logo").setAttribute("src", "images/daedalusIconSmall.png");
     document.getElementById("navMenu").style.flexDirection = "row";
     document.getElementById("navMenu").style.height = "40px";
+    document.getElementById("navMenu").style.alignItems = "center";
 
   } else {
     
     document.getElementById("logo").setAttribute("src", "images/block-version-rev-b-darkbg.png");
     document.getElementById("navMenu").style.flexDirection = "column";
+    document.getElementById("navMenu").style.alignItems = "flex-end";
+    document.getElementById("navMenu").style.height = "80px";
   }
 }
 
@@ -40,7 +43,6 @@ const observer = new IntersectionObserver(entries => {
     })
 
 });
-
 
 sr1List.forEach(el => {
     observer.observe(el);

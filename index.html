@@ -102,8 +102,11 @@
         <div class="showcase-right" id="get-started">
           <div class="showcase-form card">
             <p class="fontSize2">Request a Sample</p>
-            <form  method="POST" name="contact" data-netlify="true">
+            <form  method="POST" name="contact" netlify-honeypot="bot-field" data-netlify="true">
               <input type="hidden" name="form-name" value="contact">
+              <p class="hidden">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
               <div>
                 <input type="text" name="name" placeholder="Name" id="name" required>
               </div>
