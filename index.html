@@ -12,7 +12,7 @@
   <!--Header-->
   <section class="navbar" id="navbar">
     <div class="container flex">
-      <h1><img src="images/block-version-rev-b-darkbg.png" alt="Daedalus Logo" id="logo"></h1>
+      <img src="images/block-version-rev-b-darkbg.png" alt="Daedalus Logo" id="logo">
       <nav>
         <ul class="flex" id="navMenu">
           <li><a href="services.html">Services</a></li>
@@ -28,7 +28,7 @@
 
   <!-- Welcome  -->
   <section class="welcome">
-    <h1 class="flex fontSize4">Tell Me Your Story</h1>
+    <h2 class="flex fontSize4">Tell Me Your Story</h2>
     <div class="container flex">
       <div class="flex grid">
           <div>
@@ -57,7 +57,7 @@
 
   <section class="services" id="servicesSection">
     <div class="container">
-      <h1 class="banner">Services</h1>
+      <h1 class="banner fontSize3">Services</h1>
       <div class="grid service-options">
         <div class="sr1-wrapper">
           <div class="flex card sr1">
@@ -92,28 +92,35 @@
       </div>
     </div>
   </section>
+
     <!-- Showcase -->
     <section class="showcase">
       <div class="container grid">
-        <div class="flex showcase-left fontSize3">
-          <h1> Ready to Get Started?</h1>
+        <div class="flex fontSize3 showcase-left">
+          <p> Ready to Get Started?</p>
         </div>
         <div class="showcase-right" id="get-started">
-          <div class="card showcase-form">
+          <div class="showcase-form card">
             <p class="fontSize2">Request a Sample</p>
-            <div>
-              <input type="text" name="name" placeholder="Name" id="name" required>
+            <form  method="POST" name="contact" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact">
+              <div>
+                <input type="text" name="name" placeholder="Name" id="name" required>
+              </div>
+              <div>
+                <input type="text" name="title" placeholder="Title">
+              </div>
+              <div>
+                <input type="text" name="google-doc" placeholder="Link to Google Doc">
+              </div>
+              <div>
+                <input type="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="flex">
+                <input type="submit" value="Send" class="btn">
+              </div>
+            </form>
             </div>
-            <div>
-              <input type="text" name="title" placeholder="Title">
-            </div>
-            <div>
-              <input type="text" name="google-doc" placeholder="Link to Google Doc">
-            </div>
-            <div>
-              <input type="email" name="email" placeholder="Email" required>
-            </div>
-            <input type="submit" value="Send" class="btn">
           </div>
         </div>
       </div>
