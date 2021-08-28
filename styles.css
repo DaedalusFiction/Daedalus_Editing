@@ -60,12 +60,23 @@ ul {
 
 .navbar {
     background-color: var(--background-primary);
+    position: -webkit-sticky;
     position: fixed;
-    width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1;
 }
 
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar li {
+    padding-left: 50px;
+}
+
+/* 
 .navbar .container {
     justify-content: space-between;
 }
@@ -88,7 +99,7 @@ ul {
 
 .navbar li {
     margin: 0 0 0 10px;
-}
+} */
 
 .navbar li :hover {
     border-bottom: 2px solid var(--text-primary);

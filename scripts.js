@@ -9,16 +9,8 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 280 || document.documentElement.scrollTop > 280) {
     document.getElementById("logo").setAttribute("src", "images/daedalusIconSmall.png");
-    document.getElementById("navMenu").style.flexDirection = "row";
-    document.getElementById("navMenu").style.height = "40px";
-    document.getElementById("navMenu").style.alignItems = "center";
-
   } else {
-    
     document.getElementById("logo").setAttribute("src", "images/block-version-rev-b-darkbg.png");
-    document.getElementById("navMenu").style.flexDirection = "column";
-    document.getElementById("navMenu").style.alignItems = "flex-end";
-    document.getElementById("navMenu").style.height = "80px";
   }
 }
 
