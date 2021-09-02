@@ -1,1 +1,0 @@
-In this project I will be learning all of the ins and outs of front-end web development, and by the end of it I will be the greatest web developer the world has ever known.
