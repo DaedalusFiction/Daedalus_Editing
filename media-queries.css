@@ -2,14 +2,16 @@
     .navbar a {
         display: none;
     }
+    
     .flex {
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .flex > * {
         width: 100% !important;
-        margin: 1em 0 !important;
+        margin: 1em 0 0 0 !important;
     }
 
     h2 {
@@ -17,7 +19,23 @@
         margin-bottom: 0 !important;
     }
 
-    .ta-right {
-        text-align: left !important;
+    p {
+        text-align: justify !important;
+    }
+
+    .navbar .flex {
+        align-items: flex-start;
+    }
+
+    .navbar img {
+        padding-bottom: 1em;
+    }
+
+    #firstTestimonialsPair {
+        flex-direction: column-reverse;
+    }
+
+    .testimonials .container .flex {
+        margin: 0;
     }
 }

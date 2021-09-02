@@ -39,67 +39,6 @@ h3 {
     text-align: center;
 }
 
-.container {
-    max-width: 60rem;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex--vertical {
-    flex-direction: column;
-}
-
-.hidden {
-    visibility: hidden;
-    height: 0;
-    width: 0;
-}
-
-.ta-right {
-    text-align: end;
-}
-
-.ta-center {
-    text-align: center;
-}
-
-.grid {
-    display: grid;
-}
-
-.grid--2 {
-    grid-template-columns: auto auto;
-}
-
-.card {
-    background: white;
-    padding: 1.2em;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.btn {
-    display: inline-block;
-    background: var(--btn-primary);
-    color: white;
-    border: none;
-    text-align: center;
-    font-size: 1.2rem;
-    text-decoration: none;
-    width: fit-content;
-    padding: .5em 1.5em;
-    border-radius: 3px;
-}
-
-.btn:hover {
-    background: var(--btn-secondary);
-    transition: 0.2s;
-}
-
 /* navbar */
 
 .navbar {
@@ -112,7 +51,7 @@ h3 {
 }
 
 .navbar img {
-    width: max(10rem, 15vw);
+    width: 12em !important;
     height: auto;
 }
 

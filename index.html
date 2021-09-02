@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utilities.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="media-queries.css">
     <title>Daedalus Editing</title>
@@ -71,15 +72,15 @@
             </div>
             <div class="card service-option">
                 <h3>Developmental Edit</h3>
-                Get an in-depth look at big-picture facets of your narrative, including pacing and flow, characterization, and tone.</p>
+                <p>Get an in-depth look at big-picture facets of your narrative, including pacing and flow, characterization, and tone.</p>
           </div>
             <div class="card service-option">
                 <h3>Line Edit</h3>
-                Dive into the mechanics of your manuscript, focusing on paragraph and sentence structure, word choice, dialogue, and grammar.</p>
+                <p>Dive into the mechanics of your manuscript, focusing on paragraph and sentence structure, word choice, dialogue, and grammar.</p>
           </div>
         </div>
-        <div class="flex">
-            <input type="button" value="Learn More" class="btn">
+        <div class="flex showcase--button">
+            <a href="#" class="btn">Learn More</a>
         </div>
     </div>
 </section>
@@ -89,19 +90,19 @@
 <section class="testimonials" id="testimonialsSection">
     <div class="container">
         <h2>Listen to Authors</h2>
-        <div class="flex">
+        <div class="flex" id="firstTestimonialsPair">
             <div class="book-cover">
                 <a href="https://www.amazon.com/gp/product/B077SYZRLL/ref=dbs_a_def_rwt_bibl_vppi_i13" target="_blank"><img src="images/witch_hunter.jpg" alt="Book Cover: A normal man and woman with a warlock in the background"></a>
             </div>
             <div class="card">
                 <p><em>“David was a great editor to work with! I came to him as a first time author, and I wasn’t quite sure how to go about editing. He walked me through the process with lots of tips and advice on how to take my book to the next level. Give him a try!”</em></p>
-                <p class="ta-right">-J.Z. Foster</p>
+                <div class="ta-right">-J.Z. Foster</div>
             </div>
         </div>
         <div class="flex">
             <div class="card">
                 <p class="ta-right"><em>His perspicacity surprised me. He did an amazing job. I learned an editor is different from a writer in that an editor improves something that already exists and a writer creates something from nothing. He was able to get inside my head and tell my story better than I originally had.</em></p>
-                <p class="ta-right">-Dave Schools</p>
+                <div class="ta-right">-Dave Schools</div>
             </div>
             <div class="book-cover">
                 <a href="https://www.amazon.com/Runaway-Millionaire-Dave-Schools-ebook/dp/B071YT18WX/ref=sr_1_2?dchild=1&keywords=%22runaway+millionaire%22&qid=1630533035&s=digital-text&sr=1-2" target="_blank"><img src="images/runaway_millionaire.jpg" alt="Book Cover: A man straightening his tie"></a>
@@ -125,7 +126,7 @@
                       </p>
                     <input type="text" name="name" placeholder="Name">
                     <input type="text" name="title" placeholder="Title">
-                    <input type="email" name="email" placeholder="Email">
+                    <input type="email" name="email" placeholder="Email" required>
                     <input type="text" name="google doc" placeholder="Link to Google Doc">
                     <p>What type of edit are you most interested in?</p>
                     <input list="editOptions" id="editOptionsInput" name="editOptions" placeholder="Choose One">
