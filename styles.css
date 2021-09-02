@@ -124,12 +124,6 @@ h3 {
     border-bottom: 2px solid white;
 }
 
-@media (max-width: 60rem) {
-    .navbar a {
-        display: none;
-    }
-}
-
 /* hero */
 
 .hero {
@@ -146,7 +140,7 @@ h3 {
 .hero h1 {
     font-size: 4.5vw;
     width: 40%;
-    margin: 4.3em 0 2.5em 0;
+    padding: 4.3em 0 2.5em 0;
     color: var(--txt-light);
 }
 
@@ -266,7 +260,7 @@ h3 {
 
 .submitSample {
     background: var(--bg-accent);
-    padding: 3em;
+    padding: 3em 0;
 }
 
 .submitSample .container {
@@ -319,6 +313,10 @@ h3 {
     background: var(--bg-primary);
 }
 
+.footer--flex {
+    display: flex;
+}
+
 .footer .container {
     padding: 1em 0 .5em 0;
 }
@@ -339,6 +337,3 @@ h3 {
     border-bottom: 2px solid white;
 }
 
-@media (max-width: 60rem) {
-
-}

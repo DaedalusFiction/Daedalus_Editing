@@ -1,0 +1,23 @@
+@media (max-width: 42rem) {
+    .navbar a {
+        display: none;
+    }
+    .flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .flex > * {
+        width: 100% !important;
+        margin: 1em 0 !important;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 0 !important;
+    }
+
+    .ta-right {
+        text-align: left !important;
+    }
+}
