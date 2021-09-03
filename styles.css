@@ -185,7 +185,7 @@ h3 {
 
 .testimonials a {
     display: block;
-    width: max(8rem, 14vw);
+    width: max(10rem, 14vw);
     height: auto;
     margin: 0 auto;
 }
@@ -276,3 +276,10 @@ h3 {
     border-bottom: 2px solid white;
 }
 
+/* Services Page */
+
+/* Intro */
+
+.servicesPageIntro {
+    background-color: var(--bg-light);
+}
