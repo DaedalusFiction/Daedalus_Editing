@@ -278,8 +278,43 @@ h3 {
 
 /* Services Page */
 
+.servicesPageIntro .container,
+.editorialAssessment .container,
+.developmentalEdit .container {
+    max-width: 45em;;
+}
+
+.servicesPageIntro p,
+.editorialAssessment p,
+.developmentalEdit p {
+    margin-bottom: 1em;
+}
+
 /* Intro */
 
 .servicesPageIntro {
     background-color: var(--bg-light);
+    padding: 3em 0;
+}
+
+.servicesPageIntro .flex {
+    justify-content: space-between;
+}
+
+/* Editorial Assessment */
+
+.editorialAssessment {
+    padding: 3em 0;
+}
+
+.editorialAssessment li {
+    list-style-type: decimal;
+    list-style-position: outside;
+    margin: 1em 4em;
+}
+
+/* Developmental Edit */
+
+.developmentalEdit {
+    background-color: var(--bg-accent);
 }
