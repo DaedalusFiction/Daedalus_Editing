@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <title>Daedalus Editing</title>
+</head>
+<body>
+
+<!-- navbar -->
+
+<section class="navbar">
+    <div class="container flex">
+        <img src="images/block-version-rev-b-darkbg.png" alt="Daedalus Logo">
+        <a href="services.html">Services</a>
+        <a href="about.html">About Me</a>
+        <a href="rates.html">Rates</a>
+        <a href="#sampleSection">Request a Sample</a>
+    </div>
+</section>
+
+<!-- rates -->
+
+<section class="rates">
+    <h1>Rates</h1>
+    <div class="container">
+        <p>As I'm sure no one needs to tell you, completing a novel can be a somewhat daunting process. At times it can seem that there are a million permutations of the editing process: Editorial Assessments, Developmental Edits, Beta Reading, Line Edits, Copy Edits, Proofreading...where does it all end? Add to all that the task of finding an editor who not only aligns with your writing style and understands the meaning of your work but also <strong>fits your budget</strong> and it can seem just about miraculous that anything at all gets published these days.</p>
+        <p>But it isn't all doom and gloom. There's a light at the end of the tunnel, and that light has a name:</p>
+        <p class="ta-center"><strong>Daedalus Editing</strong></p>
+        <p>Rates:</p>
+    </div>
+</section>
+
+
+<!-- Submit a Sample -->
+
+<section class="submitSample" id="sampleSection">
+    <div class="container">
+        <h2>Take the Next Step</h2>
+        <div class="flex">
+            <p class="ta-right">Submit a 1000-word sample of your novel, novella, or short story, and I'll return a sample developmental or line edit in just a few days!</p>
+            <div class="card">
+                <h3>Submit a Sample</h3>
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="flex flex--vertical">
+                    <p class="hidden">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                      </p>
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="title" placeholder="Title">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="google doc" placeholder="Link to Google Doc">
+                    <p>What type of edit are you most interested in?</p>
+                    <input list="editOptions" id="editOptionsInput" name="editOptions" placeholder="Choose One">
+                    <datalist id="editOptions">
+                        <option value="Editorial Assessment">
+                        <option value="Developmental Edit">
+                        <option value="Line Edit">
+                        <option value="Not Sure">
+                    </datalist>
+                    <input type="submit" class="btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <div class="container footer--flex">
+        <a href="index.html"><img src="images/daedalusIconSmall.png" alt="Daedalus Logo"></a>
+        <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="rates.html">Rates</a></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#"><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#"><a href="#" class="fa fa-linkedin"></a></li>
+        </ul>
+    </div>
+</section>
+
+
+</body>
+</html>
