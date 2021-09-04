@@ -14,9 +14,10 @@
         margin: 1em 0 0 0 !important;
     }
 
+    h1,
     h2 {
         font-size: 2.5rem;
-        margin-bottom: 0 !important;
+        margin-top: 0 !important;
     }
 
     p {
@@ -38,4 +39,13 @@
     .testimonials .container .flex {
         margin: 0;
     }
+
+    .editorialAssessment li,
+    .developmentalEdit li,
+    .lineEdit li,
+    .rates li {
+        margin: 1em 2em;
+        text-align: justify;
+}
+
 }

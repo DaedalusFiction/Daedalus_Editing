@@ -36,7 +36,7 @@ a {
 h1, h2 {
     text-align: center;
     font-size: 3.5rem;
-    margin-bottom: 1em;
+    margin: 1em;
 }
 
 h3 {
@@ -101,7 +101,6 @@ h3 {
 .showcase .showcase--body {
     justify-content: space-around;
     font-size: 1.125em;
-    padding: 1em 0;
 }
 
 .showcase .headshot {
@@ -283,14 +282,18 @@ h3 {
 .servicesPageIntro .container,
 .editorialAssessment .container,
 .developmentalEdit .container,
-.lineEdit .container {
+.lineEdit .container,
+.rates .container,
+.about .container {
     max-width: 45em;
 }
 
 .servicesPageIntro p,
 .editorialAssessment p,
 .developmentalEdit p,
-.lineEdit p {
+.lineEdit p,
+.rates p, 
+.about p {
     margin-bottom: 1em;
 }
 
@@ -307,11 +310,16 @@ h3 {
 .servicesPageIntro h2 {
     margin-bottom: 0;
 }
+
+.servicesPageIntro > p {
+    margin-bottom: 3em;
+}
 /* Editorial Assessment */
 
 .editorialAssessment li,
 .developmentalEdit li,
-.lineEdit li {
+.lineEdit li,
+.rates li {
     list-style-type: decimal;
     list-style-position: outside;
     margin: 1em 4em;
@@ -320,6 +328,7 @@ h3 {
 /* Developmental Edit */
 
 .developmentalEdit {
-    background-color: var(--bg-accent);
+    background-color: var(--bg-light);
 }
 
+/* Rates */
