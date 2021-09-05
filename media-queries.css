@@ -11,7 +11,28 @@
 
     .flex > * {
         width: 100% !important;
-        margin: 1em 0 0 0 !important;
+        /* margin: 1em 0 0 0 !important; */
+    }
+
+    .showcase .headshot {
+        margin: 1em auto;
+    }
+
+    .service-option {
+        margin: 1em auto !important;
+    }
+
+    .testimonials .flex > div  {
+        height: 100%;
+        margin: 1em auto !important;
+    }
+
+    .testimonials .flex {
+        margin: 0 auto;
+    }
+
+    .submitSample .card {
+        margin: 0 auto;
     }
 
     h1,
@@ -28,17 +49,14 @@
         align-items: flex-start;
     }
 
-    .navbar img {
-        padding-bottom: 1em;
-    }
 
     #firstTestimonialsPair {
         flex-direction: column-reverse;
     }
 
-    .testimonials .container .flex {
+    /* .testimonials .container .flex {
         margin: 0;
-    }
+    } */
 
     .editorialAssessment li,
     .developmentalEdit li,
