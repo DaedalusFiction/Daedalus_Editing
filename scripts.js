@@ -1,10 +1,13 @@
 const serviceCards = document.querySelectorAll('.service-option');
-const heroText = document.getElementById('heroText').style.opacity = '1';
+const headers = document.querySelectorAll("h2");
+
+// onload fade-in animation
+//const heroText = document.getElementById('heroText').style.opacity = '1'; 
 
 
 
 
-const observer = new IntersectionObserver(entries => {
+const fadeInAndUpObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('fadeInAndUp');
@@ -12,9 +15,21 @@ const observer = new IntersectionObserver(entries => {
     }
     entry.target.classList.remove('fadeInAndUp');
   }
-
   )
 });
+
+const fadeInObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fadeIn');
+      return;
+    }
+    entry.target.classList.remove('fadeIn');
+  }
+  )
+});
+
+
 
 function AddAnimationDurations(elementsArray, increaseAmount) {
   // Adds incrementing animation durations so that elements will animate with increasing durations
@@ -28,7 +43,11 @@ function AddAnimationDurations(elementsArray, increaseAmount) {
 AddAnimationDurations(serviceCards, 0.2);
 
 serviceCards.forEach(el => {
-  observer.observe(el);
+  fadeInAndUpObserver.observe(el);
+});
+
+headers.forEach(el => {
+  fadeInObserver.observe(el);
 });
 
 

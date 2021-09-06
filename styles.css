@@ -86,7 +86,7 @@ h3 {
     width: 40%;
     padding: 3.3em 0 2.5em 0;
     color: var(--txt-light);
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s;
 }
 
@@ -340,6 +340,10 @@ h3 {
 
 .fadeInAndUp {
     animation: fadeInAndUp ease-in-out;
+}
+
+.fadeIn {
+    animation: fadeIn 0.2s ease-in-out;
 }
 
 /* Keyframes */
