@@ -83,7 +83,7 @@ h3 {
 }
 
 .hero div > div {
-    font-size: 4.5vw;
+    font-size: max(2em, 4.5vw);
     width: 40%;
     padding: 3.3em 0 2.5em 0;
     color: var(--txt-light);
@@ -200,6 +200,11 @@ h3 {
     width: 100%;
 }
 
+.testimonials img:hover {
+    transform: translateY(-0.5em);
+    transition: 0.3s;
+}
+
 /* submit sample */
 
 .submitSample {
@@ -253,7 +258,8 @@ h3 {
 /* Footer */
 
 .footer {
-    background: var(--bg-primary);
+    background: url(images/spaceoneFooter.jpg);
+    background-size: cover;
     padding: 0;
 }
 
@@ -344,6 +350,11 @@ h3 {
     opacity: 1 !important;
 }
 
+.popUp {
+    animation: popUp 0.15s ease-in-out;
+    opacity: 1 !important;
+}
+
 .fadeIn {
     animation: fadeIn 0.2s ease-in-out;
     opacity: 1 !important;
@@ -360,7 +371,17 @@ h3 {
         opacity: 1;}
 }
 
+@keyframes popUp {
+    0% {
+        transform: translateY(30px);
+        }
+    100% {
+        transform: translateY(0);
+        }
+}
+
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
+

@@ -32,6 +32,18 @@ const fadeInObserver = new IntersectionObserver(entries => {
   )
 });
 
+const popUpObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('popUp');
+      return;
+    }
+    entry.target.classList.remove('popUp');
+    entry.target.style.opacity = '0';
+  }
+  )
+});
+
 
 
 function AddAnimationDurations(elementsArray, increaseAmount) {
@@ -50,7 +62,7 @@ serviceCards.forEach(el => {
 });
 
 headers.forEach(el => {
-  fadeInObserver.observe(el);
+  popUpObserver.observe(el);
 });
 
 
