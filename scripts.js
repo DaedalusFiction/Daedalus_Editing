@@ -6,6 +6,7 @@ const headers = document.querySelectorAll("h2");
 
 
 
+// Observers
 
 const fadeInAndUpObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -14,6 +15,7 @@ const fadeInAndUpObserver = new IntersectionObserver(entries => {
       return;
     }
     entry.target.classList.remove('fadeInAndUp');
+    entry.target.style.opacity = '0';
   }
   )
 });
@@ -25,6 +27,7 @@ const fadeInObserver = new IntersectionObserver(entries => {
       return;
     }
     entry.target.classList.remove('fadeIn');
+    entry.target.style.opacity = '0';
   }
   )
 });
@@ -32,7 +35,7 @@ const fadeInObserver = new IntersectionObserver(entries => {
 
 
 function AddAnimationDurations(elementsArray, increaseAmount) {
-  // Adds incrementing animation durations so that elements will animate with increasing durations
+  // Adds incrementing animation durations so that elements will appear to cascade 
   let counter = 0.0;
   elementsArray.forEach(el => {
     el.style.animationDuration = counter.toString() + 's';

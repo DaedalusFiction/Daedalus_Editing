@@ -37,6 +37,7 @@ h1, h2 {
     text-align: center;
     font-size: 3.5rem;
     margin-bottom: .5em;
+    opacity: 0;
 }
 
 h3 {
@@ -340,10 +341,12 @@ h3 {
 
 .fadeInAndUp {
     animation: fadeInAndUp ease-in-out;
+    opacity: 1 !important;
 }
 
 .fadeIn {
     animation: fadeIn 0.2s ease-in-out;
+    opacity: 1 !important;
 }
 
 /* Keyframes */
