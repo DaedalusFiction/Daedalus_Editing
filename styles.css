@@ -37,7 +37,6 @@ h1, h2 {
     text-align: center;
     font-size: 3.5rem;
     margin-bottom: .5em;
-    opacity: 0;
 }
 
 h3 {
@@ -350,6 +349,15 @@ h3 {
     opacity: 1 !important;
 }
 
+.fadeInFromLeft {
+    animation: fadeInFromLeft 0.5s ease-in-out;
+    opacity: 1 !important;
+}
+.fadeInFromRight{
+    animation: fadeInFromRight 0.5s ease-in-out;
+    opacity: 1 !important;
+}
+
 .popUp {
     animation: popUp 0.15s ease-in-out;
     opacity: 1 !important;
@@ -360,6 +368,7 @@ h3 {
     opacity: 1 !important;
 }
 
+
 /* Keyframes */
 
 @keyframes fadeInAndUp {
@@ -368,6 +377,24 @@ h3 {
         opacity: 0.5;}
     100% {
         transform: translateY(0);
+        opacity: 1;}
+}
+
+@keyframes fadeInFromLeft {
+    0% {
+        transform: translateX(-15em);
+        opacity: 0.5;}
+    100% {
+        transform: translateX(0);
+        opacity: 1;}
+}
+
+@keyframes fadeInFromRight {
+    0% {
+        transform: translateX(15em);
+        opacity: 0.5;}
+    100% {
+        transform: translateX(0);
         opacity: 1;}
 }
 

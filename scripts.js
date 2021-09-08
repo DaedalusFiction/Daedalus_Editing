@@ -1,5 +1,7 @@
 const serviceCards = document.querySelectorAll('.service-option');
-const headers = document.querySelectorAll("h2");
+const buttons = document.querySelectorAll(".btn");
+const fadeInFromLeftElements = document.querySelectorAll(".left-fade");
+const fadeInFromRightElements = document.querySelectorAll(".right-fade");
 
 
 // Observers
@@ -40,14 +42,46 @@ const popUpObserver = new IntersectionObserver(entries => {
   )
 });
 
+const fadeInFromLeftObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fadeInFromLeft');
+      return;
+    }
+    entry.target.classList.remove('fadeInFromLeft');
+    entry.target.style.opacity = '0';
+  }
+  )
+});
+
+const fadeInFromRightObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fadeInFromRight');
+      return;
+    }
+    entry.target.classList.remove('fadeInFromRight');
+    entry.target.style.opacity = '0';
+  }
+  )
+});
+
 AddAnimationDurations(serviceCards, 0.2);
 
 serviceCards.forEach(el => {
   fadeInAndUpObserver.observe(el);
 });
 
-headers.forEach(el => {
+buttons.forEach(el => {
   popUpObserver.observe(el);
+});
+
+fadeInFromLeftElements.forEach(el => {
+  fadeInFromLeftObserver.observe(el);
+});
+
+fadeInFromRightElements.forEach(el => {
+  fadeInFromRightObserver.observe(el);
 });
 
 // Helper Functions
