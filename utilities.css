@@ -57,7 +57,8 @@
     border-radius: 3px;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
     background: var(--btn-secondary);
     transition: 0.2s;
 }

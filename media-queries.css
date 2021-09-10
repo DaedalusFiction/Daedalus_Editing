@@ -75,7 +75,7 @@
         padding: 0 0 0 var(--left-offset);
         border-bottom: 2px solid black;
         text-align: start;
-        width: calc(100% + var(--left-offset));
+        width: calc(100% + 2 * var(--left-offset));
         transform: translateX(calc(-1 * var(--left-offset)));
     }
     
@@ -97,6 +97,8 @@
         height: calc(3em - 2px);
         bottom: -3em;
         border-right: 2px solid black;
+
+        z-index: -60;
     }
     
 }
