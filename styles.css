@@ -27,6 +27,18 @@ body {
 
 section {
     padding: 3em 0;
+    position: relative;
+}
+
+section:after {
+    position: absolute;
+    content: '';
+    top: -.25em;
+    left: 50%;
+    width: .5em;
+    height: .5em;
+    background: black;
+    transform: rotate(45deg);
 }
 
 a {
@@ -86,8 +98,6 @@ h3 {
     width: 40%;
     padding: 3.3em 0 2.5em 0;
     color: var(--txt-light);
-    opacity: 1;
-    transition: opacity 0.3s;
 }
 
 /* showcase */
