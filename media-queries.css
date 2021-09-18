@@ -41,10 +41,6 @@
         margin-top: 0 !important;
     }
 
-    p {
-        text-align: justify !important;
-    }
-
     .navbar .flex {
         align-items: flex-start;
     }
@@ -59,7 +55,6 @@
     .lineEdit li,
     .rates li {
         margin: 1em 2em;
-        text-align: justify;
 }
 
 }
