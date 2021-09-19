@@ -32,7 +32,11 @@
     }
 
     .submitSample .card {
-        margin: 0 auto;
+        margin: 1em auto 2em auto;
+    }
+
+    .submitSample p {
+        text-align: left;
     }
 
     h1,
