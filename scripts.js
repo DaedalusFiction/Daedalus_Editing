@@ -4,6 +4,12 @@ const fadeInFromLeftElements = document.querySelectorAll(".left-fade");
 const fadeInFromRightElements = document.querySelectorAll(".right-fade");
 
 
+// Dropdown-menu
+
+const navToggle = document.querySelector('.nav_toggle');
+
+navToggle.addEventListener('click', () => document.body.classList.toggle('nav-open'));
+
 // Observers
 
 const fadeInAndUpObserver = new IntersectionObserver(entries => {

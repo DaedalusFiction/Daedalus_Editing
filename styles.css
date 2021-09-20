@@ -55,6 +55,7 @@ h3 {
     text-align: center;
 }
 
+
 /* navbar */
 
 .navbar {
@@ -62,9 +63,34 @@ h3 {
     padding: .5em 0;
 }
 
-.navbar .flex {
+.navbar .nav_buttons {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.nav_toggle {
+    background: var(--bg-primary);
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: .2em .25em .25em .25em;
+}
+
+.dropdown_menu {
+    width: 100%;
+    text-align: right;
+    height: 0;
+}
+
+.nav-open .dropdown_menu {
+    height: 100%;
+}
+
+.dropdown_menu li {
+    padding: 1em 0;
 }
 
 .navbar img {

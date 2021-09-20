@@ -1,8 +1,4 @@
 @media (max-width: 42rem) {
-    .navbar a {
-        display: none;
-    }
-    
     .flex {
         flex-direction: column;
         justify-content: center;
